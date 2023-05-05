@@ -2,7 +2,7 @@ import { Button } from "../components/Button.tsx";
 import { asset, IS_BROWSER } from "$fresh/runtime.ts";
 import ShakeDetector from "https://esm.sh/shake-detector";
 
-export default function Counter(props: CounterProps) {
+export default function Counter() {
   const audio = IS_BROWSER ? new Audio(asset("/bells.mp3")) : null;
 
   const playSound = () => {
@@ -28,7 +28,7 @@ export default function Counter(props: CounterProps) {
   }
   return (
     <div>
-      <Button onClick={startThing}>Start</Button>
+      <Button onClick={startThing}>Enable audio</Button>
     </div>
   );
 }
