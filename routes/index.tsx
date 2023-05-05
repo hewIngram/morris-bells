@@ -9,16 +9,12 @@ export default function Home() {
       </Head>
       <div>
         <img
-          src="/logo.svg"
+          src="/53b8806b89ad80a58a54924fe8e8be84f7f8.png"
           width="128"
           height="128"
-          alt="the fresh logo: a sliced lemon dripping with juice"
+          alt="bells"
         />
-        <p>
-          Welcome to `fresh`. Try updating this message in the ./routes/index.tsx
-          file, and refresh.
-        </p>
-        <Counter start={3} />
+        <Counter />
       </div>
     </>
   );
