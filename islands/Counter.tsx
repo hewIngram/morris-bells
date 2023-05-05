@@ -22,9 +22,13 @@ export default function Counter(props: CounterProps) {
   });
   shakeDetector.start();
   window.addEventListener(ShakeDetector.SHAKE_EVENT, playSound);
+
+  const startThing = () => {
+    console.log('hello')
+  }
   return (
     <div>
-      <Button onClick={playSound}>-1</Button>
+      <Button onClick={startThing}>Start</Button>
     </div>
   );
 }
